@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDZ STORE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav id="navbar">
+
+        <h2 class="logo">HDZ STORE</h2>
+
+        <div class="menu">
+
+            <a href="#">Home</a>
+            <a href="#">Kaos</a>
+            <a href="#">Promo</a>
+            <a href="#">Kontak</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>HDZ STORE</h1>
+
+        <p>
+            Kaos Premium Dengan Desain Modern Dan Nyaman Dipakai
+        </p>
+
+        <a href="#checkout" class="btn">
+
+            Belanja Sekarang
+
+        </a>
+
+    </section>
+
+
+
+    <!-- Produk -->
+
+    <section class="products">
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Oversize Hitam</h3>
+
+            <p>Rp 120.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Oversize Putih</h3>
+
+            <p>Rp 115.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Streetwear</h3>
+
+            <p>Rp 140.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Premium</h3>
+
+            <p>Rp 150.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Casual</h3>
+
+            <p>Rp 125.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Trendy</h3>
+
+            <p>Rp 135.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos Basic</h3>
+
+            <p>Rp 110.000</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="img/kaos grmt1.jpg">
+
+            <h3>Kaos HDZ</h3>
+
+            <p>Rp 155.000</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Form -->
+
+    <section class="checkout" id="checkout">
+
+        <h2>Form Pemesanan</h2>
+
+        <form id="orderForm">
+
+            <input type="text" placeholder="Nama Lengkap" required>
+
+            <input type="text" placeholder="Alamat Lengkap" required>
+
+            <input type="number" placeholder="No HP" required>
+
+
+            <select required>
+
+                <option>Pilih Ukuran</option>
+
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+
+            </select>
+
+
+            <button type="submit">
+
+                Pesan Sekarang
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- Spinner -->
+
+    <div id="loading" class="loading hide">
+
+        <div class="spinner"></div>
+
+        <h3>Memproses Pesanan...</h3>
+
+    </div>
+
+
+
+<script>
+
+const form=document.getElementById("orderForm");
+
+const loading=document.getElementById("loading");
+
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.querySelector(".checkout").style.display="none";
+
+loading.classList.remove("hide");
+
+});
+
+
+window.addEventListener("scroll",function(){
+
+let nav=document.getElementById("navbar");
+
+if(window.scrollY>50){
+
+nav.classList.add("scrolled");
+
+}
+
+else{
+
+nav.classList.remove("scrolled");
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
